@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gustavo Sousa — Front-End Developer</title>
+<meta name="description" content="Gustavo Sousa, desenvolvedor front-end. Sites modernos, rápidos e com identidade para negócios que querem crescer online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="Assets/Icon/favicon.ico">
+</head>
+<body>
+
+<!-- cursor custom -->
+<div class="cx-cursor" id="cxCursor"></div>
+<div class="cx-cursor-ring" id="cxRing"></div>
+
+<!-- noise overlay -->
+<div class="noise-layer"></div>
+
+<!-- nav injetado por nav-footer.js -->
+<div id="siteNav"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="eyebrow-line">
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-txt">// front-end developer — ceará, brasil</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line-1">Construo interfaces</span>
+        <span class="line-2">que <em class="hl-compile">compilam</em></span>
+        <span class="line-3">confiança<span class="hero-caret">_</span></span>
+      </h1>
+
+      <p class="hero-sub">
+        Sou <strong>Gustavo</strong>, desenvolvedor front-end. Transformo briefings soltos em sites
+        rápidos, responsivos e com identidade — pro seu negócio parecer tão bom online quanto é no mundo real.
+      </p>
+
+      <div class="hero-actions">
+        <a href="projetos.html" class="btn btn-primary">
+          <span>ver_projetos()</span>
+        </a>
+        <a href="https://github.com/SousaGustav" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+          github
+        </a>
+      </div>
+
+      <div class="hero-tags" aria-label="Tecnologias">
+        <span class="tag-pill">HTML</span>
+        <span class="tag-pill">CSS</span>
+        <span class="tag-pill">JavaScript</span>
+        <span class="tag-pill">UI/UX</span>
+        <span class="tag-pill">Responsivo</span>
+        <span class="tag-pill">Git</span>
+      </div>
+    </div>
+
+    <div class="hero-term">
+      <div class="term-window">
+        <div class="term-bar">
+          <span class="term-dot dot-r"></span>
+          <span class="term-dot dot-y"></span>
+          <span class="term-dot dot-g"></span>
+          <span class="term-path">gustavo — zsh — 90×24</span>
+        </div>
+        <div class="term-body" id="termBody">
+          <p class="term-line"><span class="t-prompt">$</span> <span class="type-target" id="typeTarget"></span><span class="type-caret">▌</span></p>
+          <div class="term-output" id="termOutput"></div>
+        </div>
+      </div>
+      <div class="term-glow" aria-hidden="true"></div>
+
+      <div class="term-window term-window-sm" id="projTerm">
+        <div class="term-bar">
+          <span class="term-dot dot-r"></span>
+          <span class="term-dot dot-y"></span>
+          <span class="term-dot dot-g"></span>
+          <span class="term-path" id="projPath">alphacolchoes.netlify.app</span>
+          <span class="proj-counter" id="projCounter">1/3</span>
+        </div>
+
+        <div class="proj-shot-stage">
+          <a class="proj-shot-link" id="projShotLink" href="https://alphacolchoes.netlify.app/" target="_blank" rel="noopener" aria-label="Ver projeto">
+            <img class="proj-shot-img" id="projShotImg" src="https://gustavosousa.vercel.app/assets/AlphaColchoesSite.png" alt="Screenshot do projeto Alpha Colchões">
+            <span class="proj-shot-overlay">view_live ↗</span>
+          </a>
+        </div>
+
+        <div class="proj-caption-bar">
+          <div class="proj-caption-text">
+            <span class="proj-name" id="projName">Alpha Colchões</span>
+            <span class="proj-type" id="projType">Site institucional</span>
+          </div>
+          <div class="proj-dots" id="projDots" role="tablist" aria-label="Selecionar projeto">
+            <button class="proj-dot is-active" data-idx="0" aria-label="Projeto 1"></button>
+            <button class="proj-dot" data-idx="1" aria-label="Projeto 2"></button>
+            <button class="proj-dot" data-idx="2" aria-label="Projeto 3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#destaques" class="scroll-cue" aria-label="Rolar para baixo">
+    <span class="scroll-cue-line"></span>
+    scroll
+  </a>
+</section>
+
+<!-- ============ PROJETOS EM DESTAQUE ============ -->
+<section class="projects" id="destaques">
+  <div class="section-head">
+    <span class="section-tag">$ ls ./projetos --top=3</span>
+    <h2 class="section-title">Projetos em destaque</h2>
+    <p class="section-desc">Uma amostra do que já construí. Tem mais no acervo completo.</p>
+  </div>
+
+  <div class="project-list">
+
+    <article class="project-row reveal-up">
+      <div class="project-shot">
+        <img src="https://gustavosousa.vercel.app/assets/AlphaColchoesSite.png" alt="Screenshot do site Alpha Colchões" loading="lazy">
+        <div class="shot-overlay"><span>view_live →</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="commit-hash">#a3f9c1</span>
+          <span class="commit-branch">main</span>
+        </div>
+        <h3>Alpha Colchões</h3>
+        <p class="project-role">Site institucional</p>
+        <p class="project-desc">Site institucional moderno para loja de colchões, com apresentação de produtos, design responsivo e foco total em credibilidade e atendimento online.</p>
+        <div class="diff-tags">
+          <span class="diff-add">+responsivo</span>
+          <span class="diff-add">+whatsapp_cta</span>
+          <span class="diff-add">+ui_ux</span>
+        </div>
+        <div class="project-links">
+          <a href="https://alphacolchoes.netlify.app/" target="_blank" rel="noopener" class="plink plink-primary">Ver site ↗</a>
+          <a href="https://github.com/SousaGustav/Alpha-Colchoes-Landing-Page" target="_blank" rel="noopener" class="plink">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-row row-reverse reveal-up">
+      <div class="project-shot">
+        <img src="https://gustavosousa.vercel.app/assets/ModeloBarbearia.png" alt="Screenshot do site Royal Cut" loading="lazy">
+        <div class="shot-overlay"><span>view_live →</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="commit-hash">#1d08aa</span>
+          <span class="commit-branch">main</span>
+        </div>
+        <h3>Royal Cut</h3>
+        <p class="project-role">Landing page institucional</p>
+        <p class="project-desc">Landing page institucional para barbearia, com modo escuro e design minimalista — criada pra fortalecer a presença digital e facilitar agendamento de clientes.</p>
+        <div class="diff-tags">
+          <span class="diff-add">+modo_escuro</span>
+          <span class="diff-add">+minimalista</span>
+          <span class="diff-add">+animacoes</span>
+        </div>
+        <div class="project-links">
+          <a href="https://modelo-site-barbearia.vercel.app/" target="_blank" rel="noopener" class="plink plink-primary">Ver site ↗</a>
+          <a href="https://github.com/SousaGustav/ModeloSiteBarbearia" target="_blank" rel="noopener" class="plink">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-row reveal-up">
+      <div class="project-shot">
+        <img src="https://gustavosousa.vercel.app/assets/SiteDashboard.png" alt="Screenshot do Dashboard de Energia Renovável" loading="lazy">
+        <div class="shot-overlay"><span>view_live →</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="commit-hash">#9c2f70</span>
+          <span class="commit-branch">main</span>
+        </div>
+        <h3>Energia Renovável — Ceará</h3>
+        <p class="project-role">Dashboard de dados</p>
+        <p class="project-desc">Dashboard de energia renovável com interface moderna, gráficos interativos em Chart.js e foco em organização e leitura clara de dados.</p>
+        <div class="diff-tags">
+          <span class="diff-add">+chart_js</span>
+          <span class="diff-add">+dataviz</span>
+          <span class="diff-add">+responsivo</span>
+        </div>
+        <div class="project-links">
+          <a href="https://dashboard-energia-renovavel-ceara.vercel.app/" target="_blank" rel="noopener" class="plink plink-primary">Ver site ↗</a>
+          <a href="https://github.com/SousaGustav/Dashboard-Energia-Renovavel-Ceara/tree/master" target="_blank" rel="noopener" class="plink">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="see-all-wrap reveal-up">
+    <a href="projetos.html" class="btn btn-ghost btn-see-all">ver_todos_projetos() →</a>
+  </div>
+</section>
+
+<!-- ============ RESUMO DE SERVIÇOS ============ -->
+<section class="services-teaser">
+  <div class="section-head">
+    <span class="section-tag">$ cat servicos.json --summary</span>
+    <h2 class="section-title">Como posso te ajudar</h2>
+    <p class="section-desc">Três frentes de trabalho. Cada projeto sai sob medida pro seu negócio.</p>
+  </div>
+
+  <div class="teaser-grid">
+    <div class="teaser-card reveal-up">
+      <span class="card-num">01</span>
+      <h3>Landing page</h3>
+      <p>Página única, focada em converter visitante em cliente. Ideal pra divulgar um produto, serviço ou evento.</p>
+      <span class="teaser-from">a partir de <strong>R$ 300</strong></span>
+    </div>
+    <div class="teaser-card reveal-up">
+      <span class="card-num">02</span>
+      <h3>Site institucional</h3>
+      <p>Várias seções, apresentação completa do negócio, mais robusto pra quem quer presença digital sólida.</p>
+      <span class="teaser-from">a partir de <strong>R$ 450</strong></span>
+    </div>
+    <div class="teaser-card reveal-up">
+      <span class="card-num">03</span>
+      <h3>Catálogo digital com integração via WhatsApp</h3>
+      <p>Várias seções, com foco no catálogo digital com carrinho para facilitar a escolha de produtos.</p>
+      <span class="teaser-from">a partir de <strong>R$ 500</strong></span>
+    </div>
+  </div>
+
+  <div class="see-all-wrap reveal-up">
+    <a href="servicos.html" class="btn btn-primary">ver_pacotes_completos() →</a>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="home-cta">
+  <div class="home-cta-inner reveal-up">
+    <h2>Tem uma ideia em mente?</h2>
+    <p>Bora transformar isso em um site de verdade — rápido, bonito e que funciona.</p>
+    <div class="home-cta-actions">
+      <a href="contato.html" class="btn btn-primary"><span>falar_com_gustavo()</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- footer injetado por nav-footer.js -->
+<div id="siteFooter"></div>
+
+<script src="nav-footer.js"></script>
+<script src="script.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
