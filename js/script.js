@@ -57,12 +57,7 @@
     });
   }
 
-  if (document.getElementById("siteNav")) {
-    window.addEventListener("nav-footer-ready", wireNav, { once: true });
-  } else {
-    // fallback: nav já está no HTML estático (não deveria acontecer, mas não trava o site)
-    wireNav();
-  }
+  wireNav();
 
   /* ---------------- cursor customizado ---------------- */
   const cxCursor = document.getElementById("cxCursor");
