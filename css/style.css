@@ -192,7 +192,7 @@ section { position: relative; z-index: 2; padding: 0 6vw; }
   letter-spacing: 0.02em;
   flex-shrink: 0;
 }
-.brand-bracket { color: var(--accent-coral); }
+.brand-bracket { color: rgb(71, 71, 204); }
 
 .nav-prompt {
   display: flex;
