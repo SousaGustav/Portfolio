@@ -822,7 +822,7 @@ section { position: relative; z-index: 2; padding: 0 6vw; }
   opacity: 0;
   transition: opacity .3s;
 }
-.shot-overlay span {
+.shot-overlay a {
   font-family: var(--mono);
   font-size: 13px;
   color: var(--accent-green);
