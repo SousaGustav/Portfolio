@@ -70,6 +70,13 @@
      Mostra só os projetos em destaque da home (subconjunto do total). */
   const PROJECTS = [
     {
+      nome: "Floricultura Bela Fiore",
+      tipo: "Institucional | Catálogo digital",
+      img: "Assets/imagens/FloriculturabelaFioreSite.png",
+      path: "floriculturabelafiore.com.br",
+      href: "https://floriculturabelafiore.com.br/",
+    },
+    {
       nome: "Alpha Colchões",
       tipo: "Site institucional",
       img: "Assets/imagens/AlphaColchoesSite.png",
@@ -82,13 +89,6 @@
       img: "Assets/imagens/ModeloBarbearia.png",
       path: "modelo-site-barbearia.vercel.app",
       href: "https://modelo-site-barbearia.vercel.app/",
-    },
-    {
-      nome: "Energia Renovável CE",
-      tipo: "Dashboard de dados",
-      img: "Assets/imagens/SiteDashboard.png",
-      path: "dashboard-energia-renovavel-ceara.vercel.app",
-      href: "https://dashboard-energia-renovavel-ceara.vercel.app/",
     },
   ];
 
